@@ -1,0 +1,40 @@
+body{
+    margin: 30px;
+    padding: 0;
+    background: #333;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    border: #fff solid 3px;
+    background: #fff;
+}
+
+#main-img img, .imgs img {
+    width: 100%;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+/*fade in animations*/
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
